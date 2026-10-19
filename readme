@@ -1,0 +1,249 @@
+# 🚦 Traffic Challan Automation
+
+An AI-powered **Traffic Challan Automation System** designed to automate the process of detecting traffic violations, identifying vehicles, extracting vehicle information, and generating challan-related records.
+
+The project aims to reduce manual work in traffic monitoring and improve the efficiency of traffic violation processing using **Computer Vision, OCR, Python, and automation**.
+
+## 📌 Project Overview
+
+Traditional traffic violation processing can require significant manual effort to identify vehicles, verify violations, read license plates, and maintain records.
+
+This project provides an automated workflow where traffic-related images/videos can be processed to identify violations and extract relevant vehicle information.
+
+### 🔄 Workflow
+
+```text
+Traffic Image / Video
+        ↓
+Image Processing
+        ↓
+Traffic Violation Detection
+        ↓
+Vehicle Detection
+        ↓
+Number Plate Detection
+        ↓
+OCR / Number Plate Recognition
+        ↓
+Vehicle Information Extraction
+        ↓
+Challan Record Generation
+        ↓
+Database / Output
+```
+
+## ✨ Features
+
+* 🚗 Automated vehicle detection
+* 🚦 Traffic violation detection
+* 🔍 Number plate detection
+* 🔤 OCR-based number plate text extraction
+* 📄 Automated challan record generation
+* 🗄️ Database integration for storing records
+* 🐍 Python-based implementation
+* ⚡ Reduces manual traffic-monitoring effort
+* 📊 Structured output for further processing
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **OpenCV**
+* **Computer Vision**
+* **OCR**
+* **Machine Learning / Deep Learning**
+* **NumPy**
+* **Pandas**
+* **Database**
+* **Git & GitHub**
+
+> Add or remove libraries above based on the packages actually used in your implementation.
+
+## 📂 Project Structure
+
+```text
+Traffic-Challan-Automation/
+│
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── models/
+│   └── ...
+│
+├── images/
+│   └── ...
+│
+├── output/
+│   └── ...
+│
+├── database/
+│   └── ...
+│
+└── utils/
+    └── ...
+```
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/traffic-challan-automation.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd traffic-challan-automation
+```
+
+### 3. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate the environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+If your project uses another entry file, replace `main.py` with the appropriate file.
+
+## 🧠 How It Works
+
+### 1. Input
+
+The system accepts traffic-related images or video frames as input.
+
+### 2. Vehicle Detection
+
+Computer vision techniques are used to identify vehicles present in the input.
+
+### 3. Violation Detection
+
+The system analyzes the traffic scene to identify supported traffic violations.
+
+### 4. Number Plate Detection
+
+Once a vehicle is identified, the system locates the corresponding number plate.
+
+### 5. OCR
+
+OCR technology extracts the text from the detected number plate.
+
+Example:
+
+```text
+Input:
+Vehicle Number Plate → TS09AB1234
+
+Output:
+Vehicle Number → TS09AB1234
+```
+
+### 6. Challan Generation
+
+The extracted vehicle information and violation details can be used to create a structured challan record.
+
+Example:
+
+```text
+Vehicle Number : TS09AB1234
+Violation      : Traffic Violation
+Date           : YYYY-MM-DD
+Status         : Generated
+```
+
+## 📊 Example Output
+
+```text
+-----------------------------------
+      TRAFFIC CHALLAN
+-----------------------------------
+
+Vehicle Number : TS09AB1234
+Violation      : [Detected Violation]
+Date           : 2026-09-28
+Status         : Generated
+
+-----------------------------------
+```
+
+## 🎯 Objective
+
+The main objective of this project is to demonstrate how **AI, Computer Vision, OCR, and automation** can be combined to create a practical traffic-management solution.
+
+The system can help reduce repetitive manual tasks and provide structured information for traffic violation processing.
+
+## 🔮 Future Improvements
+
+* Real-time CCTV/video-stream processing
+* Improved number plate recognition
+* Multiple violation detection
+* Automatic SMS/email notifications
+* Online payment integration
+* Cloud deployment
+* Dashboard for traffic authorities
+* Real-time violation monitoring
+* Improved accuracy for different lighting and weather conditions
+
+## 👨‍💻 Skills Demonstrated
+
+This project demonstrates practical experience in:
+
+* Python Programming
+* Computer Vision
+* OCR
+* Image Processing
+* Machine Learning
+* Automation
+* Database Integration
+* API Integration
+* Problem Solving
+* End-to-End AI Application Development
+
+## 📜 License
+
+This project is intended for educational and demonstration purposes.
+
+## 👤 Author
+
+**Rajkeerth Bobbara**
+
+AI/ML & Generative AI Enthusiast
+
+* Python
+* Machine Learning
+* Generative AI
+* Computer Vision
+* OCR
+* SQL
+* FastAPI
+* AI Automation
+
+
+Fast api 
+uvicorn api:app --reload
